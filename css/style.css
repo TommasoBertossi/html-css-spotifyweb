@@ -38,5 +38,5 @@ footer {
 }
 
 .col-30 {
-    width: calc(100 / 3S);
+    width: calc(100% / 3);
 }
