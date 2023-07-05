@@ -1,0 +1,42 @@
+:root {
+    --menù-size: 300px;
+    --footer-size: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*    LEFT-MENÙ */
+#left-menù {
+    width: var(--menù-size);
+    height: calc(100vh - var(--footer-size));
+    background-color: black;
+    color: white;
+}
+/*    MAIN-BODY */
+
+#main-body {
+    width: 100%;
+    background-color: #141922;
+}
+
+/*    FOOTER */
+
+footer {
+    width: 100%;
+    height: var(--footer-size);
+    background-color: #282828;
+
+}
+
+/*   UTILS */
+
+.flex {
+    display: flex;
+}
+
+.col-30 {
+    width: calc(100 / 3S);
+}
