@@ -1,24 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
+
 <body>
     <main class="flex">
-        <div id="left-menù"></div>
-        <div id="main-body"></div>
-    </main>
-    <footer class="flex">
-        <div>
-            <div></div>
-            <div></div>
+        <div id="left-menù">
+            <div>
+                <div class="menù-header">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="menù-body">
+                    <div class="menù-body-top">
+                        <ul>
+                            <li><img src="./img/home.svg" alt=""> Home</li>
+                            <li><img src="./img/search.svg" alt=""> Cerca</li>
+                            <li><img src="./img/libreria.svg" alt=""> La tua Libreria</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menù-body-bottom">
+                    <h3>Playlist</h3>
+                    <i class="fa-solid fa-plus playlist-button"></i>
+                    <ul>
+                        <li>Prima Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Ultima Playlist</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menù-footer">
+                <i class="fa-regular fa-circle-down"></i> Installa app
+                <hr>
+                <div class="profile-owner">
+                    <img src="./img/profile.svg" alt="">
+                    <p>John Doe</p>
+                </div>
+            </div>
         </div>
-        <div></div>
-        <div></div>
+        <div id="main-body">
+            <div class="top-bar">
+                <div class="button"> EFFETTUA L'UPGRADE</div>
+            </div>
+            <div class="album-body">
+                <nav>
+                    <ul class="music-type">
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                </nav>
+                <!-- RECENTLY PLAYED -->
+                <h2>Recently Played</h2>
+                <div class="row">
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/stranger.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/split.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/cure.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/sinister.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CREATO PER TE -->
+                <h2>Creato per John Doe</h2>
+                <h4>Più ascolti, più saranno accurati i suggerimenti</h4>
+                <div class="row">
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/radar.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--    ARTISTI PIù POPOLARI -->
+
+                <h2>Artisti più popolari</h2>
+                <div class="row">
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/youg.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                        </div>
+                    </div>
+                    <div class="col-6 col-4 col-2">
+                        <div class="card">
+                            <img src="./img/einaudi.jpeg" alt="">
+                        </div>
+                        <div class="card-description">
+                            <h3>Heavy Metal</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="left-footer">
+            <div class="song-info">
+                <img src="./spotify/img/sinister.jpeg" alt="">
+                <div>
+                    <h5>Sinister</h5>
+                    <p>Brano Nome</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mid-footer">
+            <div class="icons">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play fa-2x"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+
+            </div>
+            <div class="song-control-bar">
+                <div>0.25</div>
+                <div class="music-bar-container">
+                    <span class="music-bar">
+                        <span class="progress">
+                            <span class="progress-ball"></span>
+                        </span>
+                    </span>
+                </div>
+                <div>4.35</div>
+            </div>
+        </div>
+        <div class="right-footer">
+            <div>
+                <i class="fa-solid fa-bars fa-xs"></i>
+                <i class="fa-solid fa-display fa-xs"></i>
+                <i class="fa-solid fa-volume-high fa-xs"></i>
+            </div>
+            <div class="song-control-bar">
+                <div class="music-bar-container">
+                    <span class="music-bar-mini">
+                        <span class="progress">
+                            <span class="progress-ball"></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
     </footer>
 </body>
+
 </html>
